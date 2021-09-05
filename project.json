@@ -1,0 +1,8 @@
+{
+  "engine": "cocos2d-html5",
+  "packages": "packages",
+  "version": "2.4.3",
+  "name": "My2048",
+  "id": "0148181b-a70d-4c55-8051-a87b9903a6ff",
+  "isNew": false
+}

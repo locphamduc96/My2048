@@ -1,2 +1,2 @@
-# My2048
-My2048
+# hello-world
+Hello world new project template.
