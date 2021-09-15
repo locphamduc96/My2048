@@ -12,6 +12,7 @@ export default class NewClass extends cc.Component {
   // LIFE-CYCLE CALLBACKS:
 
   onLoad() {
+    this.node.active = false;
     this.node.opacity = 0;
   }
 
@@ -20,12 +21,12 @@ export default class NewClass extends cc.Component {
   // update (dt) {}
 
   show() {
-    console.log(" popup show ");
+    this.node.active = true;
     cc.tween(this.node).to(1, { opacity: 255 }, { easing: "quartOut" }).start();
-    console.log("opacity " + this.node.opacity);
   }
 
   hide() {
+    this.node.active = false;
     cc.tween(this.node).to(1, { opacity: 0 }, { easing: "quartOut" }).start();
   }
 }
